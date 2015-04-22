@@ -11,12 +11,12 @@ SimpleRestEndpoint sets up an endpoint that can be posted to in order to validat
 5. Install dependencies `bundle install`
  
 # Usage
-1. Run sinatra `bundle exec ./lib/simple_rest.rb` from the project root.
-2. Submit your rest posts to `[server_url]:4567/prospect`
+* Run sinatra `bundle exec ./lib/simple_rest.rb` from the project root.
+* Submit your rest posts to `[server_url]:4567/prospect`
 ```
 curl -H "Content-Type: application/json" -X POST -d '{"foo":"bar"}' http://[server_url]:4567/prospect
 ```
-3. Check output:
+* Check output:
 ```
 [2015-04-22 09:29:40] INFO  WEBrick::HTTPServer#start: pid=20913 port=4567
 {"foo"=>"bar"}
